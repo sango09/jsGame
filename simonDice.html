@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="main.css" rel="stylesheet">
+    <title>Simon Dice</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__container--titulo">
+        <h1>Simon Dice</h1>
+    </div>
+    <div class="header__container--info">
+        <p class="header__container--info-score">Score: <span id="score">0</span></p>
+        <p class="header__container--info-level">Level: <span id="currentLevel">1</span></p>
+    </div>
+</header>
+
+
+<section class="section">
+    <div class="section__gameboard">
+        <div class="color celeste left" data-color="celeste" id="celeste"></div>
+        <div class="color violeta right" data-color="violeta" id="violeta"></div>
+        <div class="color naranja left" data-color="naranja" id="naranja"></div>
+        <div class="color verde right" data-color="verde" id="verde"></div>
+        <button class="btn-start" id="btnEmpezar" onclick="startGame()">Empezar a jugar!</button>
+    </div>
+</section>
+
+
+<script src="simon.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+</body>
+</html>
